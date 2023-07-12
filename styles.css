@@ -1,0 +1,245 @@
+/* scroll behavior */
+@media (prefers-reduced-motion: no-preference) {
+    * {
+      scroll-behavior: smooth;
+    }
+  }
+
+  /* personal taste in making webpage */
+  * {
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-size: 62.5%;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: "Garamond", sans-serif;
+  }
+  
+  /* for more readable codes, simplification */
+  
+  li {
+    list-style: none;
+    transition: transform .3s ease-in-out;
+  }
+  
+  li:hover {
+    transform: scale(1.3);
+  }
+
+  a {
+    text-decoration: none;
+  }
+  
+  /* navigation */
+  #header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3c3d42;
+    height: 6rem;
+    width: 100%;
+    position: fixed;
+  }
+  
+  .logo {
+    font-size: 3.2rem;
+    padding-left: 1.2em;
+    font-family: "Papyrus";
+    letter-spacing: -3px;
+  }
+  
+  .logo .initial {
+    color: #9ccd62;
+  }
+  
+  .logo .letter {
+    color: #f6f8e2;
+    font-size: 2rem;
+    text-transform: uppercase;
+  }
+  
+  .letter:hover {
+    transition: .1s;
+    color: #9ccd62;
+    font-size: 2.1rem;
+    font-weight: 900;
+  }
+
+  #navbar ul{
+    display: flex;
+  }
+  
+  #navbar li {
+    padding-right: 4em;
+  }
+  
+  #navbar a {
+    font-size: 2.2rem;
+    color: #f6f8e2;
+    font-weight: 700;
+    font-family: "Garamond";
+    text-transform: uppercase;
+  }
+  
+  #navbar a:hover {
+    color: #9ccd62;
+  }
+  
+  /* 1st section */
+  #welcome-section {
+    text-align: center;
+    background-color: #e0ddca;
+    height: 100vh;
+    margin: 0;
+    color: gray;
+  }
+  
+  #welcome-section h1 {
+    font-size: 10rem;
+    padding-top: 2.5em;
+    margin: 0;
+    text-transform: uppercase;
+  }
+  
+  .name {
+    color: #3c3d42;
+    font-size: 11rem;
+  }
+  
+  #welcome-section p {
+    font-style: italic;
+    font-size: 3.2rem;
+    margin: 0;
+  }
+  
+  /* 2nd section */
+  #projects {
+    text-align: center;
+    height: 100vh;
+    background-color: #3c3d42;
+    margin: 0;
+  }
+  
+  #projects h1 {
+    margin: 0;
+    font-size: 4.2rem;
+    padding-top: 2em;
+    color: #f6f8e2;
+  }
+  
+  figure {
+    width: 30em;
+    background-color: #e0ddca;
+    padding: 2em;
+    margin: 2em auto;
+    border-radius: 10px;
+    transition: transform 1s ease-in-out;
+  }
+  
+  figcaption {
+    color: #3c3d42;
+    font-size: 3rem;
+    margin-top: .5em;
+    font-family: "Verdana", sans-serif;
+  }
+  
+  #profile-link figure:hover {
+    background-color: #3c3d42;
+    border: 1px solid #e0ddca;
+    transform: scale(1.1);
+  }
+  
+  #projects a figcaption:hover{
+    color: #e0ddca;
+    transition: 1s;
+  }
+
+  img {
+    width: 25em;
+    border-radius: .8em;
+  }
+
+  /* 3rd section */
+  #contact {
+    height: 90vh;
+    text-align: center;
+    background-color: #e0ddca;
+  }
+  
+  #contact h1 {
+    font-size: 8rem;
+    margin: 0;
+    padding-top: 2em;
+    text-transform: uppercase;
+    color: #3c3d42;
+  }
+  
+  #contact p {
+    font-size: 2rem;
+    margin: 0;
+    margin-bottom: 3em;
+  }
+  
+  #contact ul{
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  #contact a {
+    font-size: 3rem;
+    margin-top: 3em;
+    color: #3c3d42;
+    padding: .5em;
+    background-color: #3c3d42;
+    color: #e0ddca;
+    border-radius: 30px;
+    text-transform: uppercase;
+  }
+  
+  #contact a:hover {
+    color: #3c3d42;
+    background-color: #e0ddca;
+    border: 2px solid #3c3d42;
+  }
+  
+  hr {
+    border: .5em solid #3c3d42;
+    margin: 0;
+  }
+  
+  footer {
+    background-color: #e0ddca;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5rem;
+    padding: 0 1em;
+    font-weight: bold;
+    margin: 0;
+  }
+
+.red {
+  color: red;
+  font-size: 2rem;
+}
+  
+  .red {
+    color: red;
+    font-size: 2rem;
+  }
+
+  @media only screen and (max-width: 620px) {
+    /* For mobile phones: */
+    body {
+      width: 100%;
+    }
+    #contact ul {
+      display: block;
+    }
+  }
